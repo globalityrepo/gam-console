@@ -31,7 +31,7 @@
         
         function buscarTransacaoParametroByIdTransacao(idTransacao, callback) {
         	var response;
-        	$http.get('/gtm-console-web-api/transacao/transacaoparametro/' + idTransacao)
+        	$http.get('/gam-console-web-api/transacao/transacaoparametro/' + idTransacao)
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -44,7 +44,7 @@
         
         function buscarTransacaoPassoByIdTransacao(idTransacao, callback) {
         	var response;
-        	$http.get('/gtm-console-web-api/transacao/transacaopasso/' + idTransacao)
+        	$http.get('/gam-console-web-api/transacao/transacaopasso/' + idTransacao)
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -57,7 +57,7 @@
         
         function buscarTransacoesByGrupos(filtro, callback) {
         	var response;
-        	$http.post('/gtm-console-web-api/transacao/filtro/transacaogrupo/', filtro)
+        	$http.post('/gam-console-web-api/transacao/filtro/transacaogrupo/', filtro)
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -70,7 +70,7 @@
         
         function incluir(item, callback) {
         	var response;
-        	$http.post('/gtm-console-web-api/transacao/', item )
+        	$http.post('/gam-console-web-api/transacao/', item )
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -83,7 +83,7 @@
         
         function alterar(item, callback) {
         	var response;
-        	$http.put('/gtm-console-web-api/transacao/', item )
+        	$http.put('/gam-console-web-api/transacao/', item )
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -96,7 +96,7 @@
         
         function excluir(item, callback) {
         	var response;
-        	$http.delete('/gtm-console-web-api/transacao/' + item.id)
+        	$http.delete('/gam-console-web-api/transacao/' + item.id)
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -109,7 +109,7 @@
                 
         function listarGruposAdicionados(id, callback) {
         	var response;
-        	$http.get('/gtm-console-web-api/transacao/grupo/adicionado/' + id)
+        	$http.get('/gam-console-web-api/transacao/grupo/adicionado/' + id)
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -122,7 +122,7 @@
         
         function checkRuleExclusaoTransacaoGrupo(id, callback) {
         	var response;
-        	$http.get('/gtm-console-web-api/transacao/transacaogrupo/checkrule/delete/' + id)
+        	$http.get('/gam-console-web-api/transacao/transacaogrupo/checkrule/delete/' + id)
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -135,7 +135,7 @@
         
         function checkRuleExclusaoTransacaoPasso(id, callback) {
         	var response;
-        	$http.get('/gtm-console-web-api/transacao/transacaopasso/checkrule/delete/' + id)
+        	$http.get('/gam-console-web-api/transacao/transacaopasso/checkrule/delete/' + id)
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -148,7 +148,7 @@
         
         function checkRuleExclusaoTransacaoPassoAcao(idTransacaoPasso, idTipoEvento, callback) {
         	var response;
-        	$http.get('/gtm-console-web-api/transacao/transacaopassoacao/checkrule/delete/' + idTransacaoPasso + '/' + idTipoEvento)
+        	$http.get('/gam-console-web-api/transacao/transacaopassoacao/checkrule/delete/' + idTransacaoPasso + '/' + idTipoEvento)
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -161,7 +161,7 @@
         
         function checkRuleExclusaoTransacaoParametro(id, callback) {
         	var response;
-        	$http.get('/gtm-console-web-api/transacao/transacaoparametro/checkrule/delete/' + id)
+        	$http.get('/gam-console-web-api/transacao/transacaoparametro/checkrule/delete/' + id)
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -174,7 +174,7 @@
         
         function checkRuleExclusaoTransacao(id, callback) {
         	var response;
-        	$http.get('/gtm-console-web-api/transacao/checkrule/delete/' + id)
+        	$http.get('/gam-console-web-api/transacao/checkrule/delete/' + id)
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -187,7 +187,7 @@
         
         function checkRuleDuplicidadeCodigoTransacao(codigo, idRef, callback) {
         	var response;
-        	$http.get('/gtm-console-web-api/transacao/checkrule/duplicidade/' + codigo + '/' + (!idRef ? 0 : idRef))
+        	$http.get('/gam-console-web-api/transacao/checkrule/duplicidade/' + codigo + '/' + (!idRef ? 0 : idRef))
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);

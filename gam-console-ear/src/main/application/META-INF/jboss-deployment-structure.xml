@@ -19,7 +19,7 @@
 	<!-- This is the top level ear module, which contains all the classes in 
 		the EAR's lib folder -->
 
-	<sub-deployment name="gtm-console-service.jar">
+	<sub-deployment name="gam-console-service.jar">
 		<!-- This corresponds to the module for a web deployment -->
 		<!-- it can use all the same tags as the <deployment> entry above -->
 		<!-- Set's local resources to have the lowest priority -->

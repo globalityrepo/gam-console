@@ -20,7 +20,7 @@
             
         function listarPermissoesAcessoPerfil(idPerfil, callback) {
         	var response;
-        	$http.get('/gtm-console-web-api/autorizacao/perfil/' + idPerfil)
+        	$http.get('/gam-console-web-api/autorizacao/perfil/' + idPerfil)
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -33,7 +33,7 @@
         
         function listarPermissoesAcessoRecurso(idPerfil, codRecurso, callback) {
         	var response;
-        	$http.get('/gtm-console-web-api/autorizacao/perfil/' + idPerfil + '/recurso/' + codRecurso)
+        	$http.get('/gam-console-web-api/autorizacao/perfil/' + idPerfil + '/recurso/' + codRecurso)
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);

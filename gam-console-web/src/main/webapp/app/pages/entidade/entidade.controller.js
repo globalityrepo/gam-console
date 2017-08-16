@@ -397,7 +397,7 @@
 		
 		function downloadTemplateCSV() {
 			$scope.dataLoading = true;
-			CommonService.baixarArquivoExternal('GTM_Template_Importacao_MassaDeDados.csv', function (response) {
+			CommonService.baixarArquivoExternal('GAM_Template_Importacao_MassaDeDados.csv', function (response) {
                 if (response.success) {
                 	$scope.dataLoading = false;
                 } else {

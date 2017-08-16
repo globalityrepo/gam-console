@@ -28,7 +28,7 @@
         
         function buscar(pageSize, currentPage, idUsuario, filtro, callback) {
         	var response;
-        	$http.get('/gtm-console-web-api/depara/' + pageSize + '/' + currentPage + '/' + idUsuario + '/' + filtro )
+        	$http.get('/gam-console-web-api/depara/' + pageSize + '/' + currentPage + '/' + idUsuario + '/' + filtro )
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -41,7 +41,7 @@
         
         function buscarEntidadeAplicacoesB(idEntidade, idEntidadeAplicacaoA, callback) {
         	var response;
-        	$http.get('/gtm-console-web-api/depara/aplicacoes/' + idEntidade + '/exceto/' + idEntidadeAplicacaoA)
+        	$http.get('/gam-console-web-api/depara/aplicacoes/' + idEntidade + '/exceto/' + idEntidadeAplicacaoA)
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -54,7 +54,7 @@
         
         function buscarMassaDeDadosAplicacaoA(idEntidadeAplicacao, callback) {
         	var response;
-        	$http.get('/gtm-console-web-api/depara/aplicacao/a/registros/' + idEntidadeAplicacao)
+        	$http.get('/gam-console-web-api/depara/aplicacao/a/registros/' + idEntidadeAplicacao)
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -67,7 +67,7 @@
         
         function buscarMassaDeDadosAplicacaoB(idEntidadeAplicacao, callback) {
         	var response;
-        	$http.get('/gtm-console-web-api/depara/aplicacao/b/registros/' + idEntidadeAplicacao)
+        	$http.get('/gam-console-web-api/depara/aplicacao/b/registros/' + idEntidadeAplicacao)
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -80,7 +80,7 @@
         
         function incluir(item, callback) {
         	var response;
-        	$http.post('/gtm-console-web-api/depara/', item )
+        	$http.post('/gam-console-web-api/depara/', item )
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -93,7 +93,7 @@
         
         function alterar(item, callback) {
         	var response;
-        	$http.put('/gtm-console-web-api/depara/', item )
+        	$http.put('/gam-console-web-api/depara/', item )
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -106,7 +106,7 @@
         
         function excluir(item, idUsuario, callback) {
         	var response;
-        	$http.delete('/gtm-console-web-api/depara/' + item.id + '/' + idUsuario)
+        	$http.delete('/gam-console-web-api/depara/' + item.id + '/' + idUsuario)
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -119,7 +119,7 @@
         
         function checkRuleAssociacaoEntidadeAplicacao(idEntidadeAplicacaoA, idEntidadeAplicacaoB, callback) {
         	var response;
-        	$http.get('/gtm-console-web-api/depara/checkrule/associacao/entidadeaplicacao/' + idEntidadeAplicacaoA + '/' + idEntidadeAplicacaoB)
+        	$http.get('/gam-console-web-api/depara/checkrule/associacao/entidadeaplicacao/' + idEntidadeAplicacaoA + '/' + idEntidadeAplicacaoB)
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -138,7 +138,7 @@
                 }
             }
         	var response;
-            $http.post('/gtm-console-web-api/depara/upload/' + idEntidadeAplicacaoA + '/' + idEntidadeAplicacaoB, formdata, configContent)
+            $http.post('/gam-console-web-api/depara/upload/' + idEntidadeAplicacaoA + '/' + idEntidadeAplicacaoB, formdata, configContent)
             .success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -151,7 +151,7 @@
         
         function buscarRegstrosDePara(idEntidadeAplicacaoDePara, callback) {
         	var response;
-        	$http.get('/gtm-console-web-api/depara/registros/' + idEntidadeAplicacaoDePara)
+        	$http.get('/gam-console-web-api/depara/registros/' + idEntidadeAplicacaoDePara)
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);

@@ -543,7 +543,7 @@
         
 		function downloadTemplateCSV() {
 			$scope.dataLoading = true;
-			CommonService.baixarArquivoExternal('GTM_Template_Importacao_DePara.csv', function (response) {
+			CommonService.baixarArquivoExternal('GAM_Template_Importacao_DePara.csv', function (response) {
                 if (response.success) {
                 	$scope.dataLoading = false;
                 } else {

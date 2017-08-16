@@ -22,7 +22,7 @@
         	var encodeString = "login=" + login + "&senhaAtual=" + Base64.encode(senhaAtual) + "&senhaNova=" + Base64.encode(senhaNova);
             $http({
                 method: "POST",
-                url: "/gtm-console-web-api/trocasenha",
+                url: "/gam-console-web-api/trocasenha",
                 data: encodeString,
                 headers: {'Content-Type': "application/x-www-form-urlencoded"}
             })

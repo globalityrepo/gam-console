@@ -3,8 +3,8 @@
 	xmlns="http://java.sun.com/xml/ns/javaee"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	id="WebApp_ID" version="3.0">
-	<display-name>GTM WEB API</display-name>
-	<module-name>gtm-web-api</module-name>
+	<display-name>GAM WEB API</display-name>
+	<module-name>gam-web-api</module-name>
 
 	<context-param>
 		<param-name>PARAMETER_ENCODING</param-name>

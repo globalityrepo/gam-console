@@ -4,9 +4,9 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	id="WebApp_ID" version="3.0">
 
-	<display-name>GTM WEB</display-name>
+	<display-name>GAM WEB</display-name>
 	
-	<module-name>gtm-web</module-name>
+	<module-name>gam-web</module-name>
 
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>

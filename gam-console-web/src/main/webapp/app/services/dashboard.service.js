@@ -20,7 +20,7 @@
         
         function buscar(filtro, callback) {
         	var response;
-        	$http.post('/gtm-console-web-api/dashboard/', filtro )
+        	$http.post('/gam-console-web-api/dashboard/', filtro )
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -33,7 +33,7 @@
         
         function baixarArquivoConteudo(id, callback) {
         	var response;
-        	$http({method: 'GET', url: '/gtm-console-web-api/dashboard/download/conteudo/' + id}).
+        	$http({method: 'GET', url: '/gam-console-web-api/dashboard/download/conteudo/' + id}).
         	  success(function(data, status, headers, config) {
         		  var anchor = angular.element('<a/>');
         		  anchor.css({display: 'none'});

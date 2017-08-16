@@ -22,7 +22,7 @@
         	var encodeString = "login=" + login;
             $http({
                 method: "POST",
-                url: "/gtm-console-web-api/esquecisenha",
+                url: "/gam-console-web-api/esquecisenha",
                 data: encodeString,
                 headers: {'Content-Type': "application/x-www-form-urlencoded"}
             })

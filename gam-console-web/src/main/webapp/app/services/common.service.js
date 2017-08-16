@@ -20,7 +20,7 @@
         
         function baixarArquivoExternal(filename, callback) {
         	var response;
-        	$http({method: 'GET', url: '/gtm-console-web-api/common/download/external/' + filename}).
+        	$http({method: 'GET', url: '/gam-console-web-api/common/download/external/' + filename}).
         	  success(function(data, status, headers, config) {
         		  var anchor = angular.element('<a/>');
         		  anchor.css({display: 'none'});
@@ -42,7 +42,7 @@
         
         function buscarAcessosDelegados(codigoRecurso, idRef, callback) {
         	var response;
-        	$http.get('/gtm-console-web-api/common/acessosdelegados/' + codigoRecurso + '/' + idRef)
+        	$http.get('/gam-console-web-api/common/acessosdelegados/' + codigoRecurso + '/' + idRef)
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);

@@ -21,7 +21,7 @@
     
         function login(username, password, callback) {
         	var response;
-        	$http.post('/gtm-console-web-api/login', { codigo: username, senha: Base64.encode(password) } )
+        	$http.post('/gam-console-web-api/login', { codigo: username, senha: Base64.encode(password) } )
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);

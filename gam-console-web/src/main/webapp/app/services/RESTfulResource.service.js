@@ -23,7 +23,7 @@
 
         function buscar(entity, pageSize, currentPage, filtro, callback) {
         	var response;
-        	$http.get('/gtm-console-web-api/restfulresource/' + entity  + '/' + pageSize + '/' + currentPage + '/' + filtro )
+        	$http.get('/gam-console-web-api/restfulresource/' + entity  + '/' + pageSize + '/' + currentPage + '/' + filtro )
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -36,7 +36,7 @@
         
         function listar(entity, callback) {
         	var response;
-        	$http.get('/gtm-console-web-api/restfulresource/' + entity)
+        	$http.get('/gam-console-web-api/restfulresource/' + entity)
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -49,7 +49,7 @@
         
         function incluir(entity, item, callback) {
         	var response;
-        	$http.post('/gtm-console-web-api/restfulresource/' + entity, item )
+        	$http.post('/gam-console-web-api/restfulresource/' + entity, item )
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -62,7 +62,7 @@
         
         function alterar(entity, item, callback) {
         	var response;
-        	$http.put('/gtm-console-web-api/restfulresource/' + entity, item )
+        	$http.put('/gam-console-web-api/restfulresource/' + entity, item )
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
@@ -75,7 +75,7 @@
         
         function excluir(entity, item, callback) {
         	var response;
-        	$http.delete('/gtm-console-web-api/restfulresource/' + entity  + '/' + item.id)
+        	$http.delete('/gam-console-web-api/restfulresource/' + entity  + '/' + item.id)
         	.success(function(data, status, headers, config) {
         		response = { success: true , data: data};
 		    	callback(response);
